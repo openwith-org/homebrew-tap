@@ -5,21 +5,21 @@
 class Openwith < Formula
   desc "macOS TUI for managing default file associations"
   homepage "https://github.com/openwith-org/openwith"
-  version "1.0.0"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/openwith-org/openwith/releases/download/v1.0.0/openwith_1.0.0_darwin_amd64.tar.gz"
-      sha256 "0f29b49e48dadda6c5b64b6ce42bcc25cfac4a5422b3d47d11d4e68606dd18c1"
+      url "https://github.com/openwith-org/openwith/releases/download/v1.1.0/openwith_1.1.0_darwin_amd64.tar.gz"
+      sha256 "de1c900882e3dc1d505dc8a0c9f80e3638355e62d65740c12f361f5631f6f8de"
 
       define_method(:install) do
         bin.install "openwith"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/openwith-org/openwith/releases/download/v1.0.0/openwith_1.0.0_darwin_arm64.tar.gz"
-      sha256 "65f061eb1e59999fc28eee3dd986ab3684caaaf41ec22fed5b578a9aa651d9a3"
+      url "https://github.com/openwith-org/openwith/releases/download/v1.1.0/openwith_1.1.0_darwin_arm64.tar.gz"
+      sha256 "793a71b2ae4aa9222a02c25a5febedea194cef0888ff8633528def490e1d21e7"
 
       define_method(:install) do
         bin.install "openwith"
@@ -29,15 +29,15 @@ class Openwith < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/openwith-org/openwith/releases/download/v1.0.0/openwith_1.0.0_linux_amd64.tar.gz"
-      sha256 "763756a42a99e193834f2523303f7b5451881fbb0fd25592ff9c98ebf7931afe"
+      url "https://github.com/openwith-org/openwith/releases/download/v1.1.0/openwith_1.1.0_linux_amd64.tar.gz"
+      sha256 "4e68c10f5fbac88a3285d759669f2752e51d8068eeaecf0f3fdb2a1b81135579"
       define_method(:install) do
         bin.install "openwith"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/openwith-org/openwith/releases/download/v1.0.0/openwith_1.0.0_linux_arm64.tar.gz"
-      sha256 "4ad98a54c219baf3266f5d48970a9549c6d8e61c0117c111c130367aceb52da6"
+      url "https://github.com/openwith-org/openwith/releases/download/v1.1.0/openwith_1.1.0_linux_arm64.tar.gz"
+      sha256 "23d118d314b22c70f42a14437c953e5dafbe11c37b9c89b68ea1f89b03ded256"
       define_method(:install) do
         bin.install "openwith"
       end
